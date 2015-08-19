@@ -1,0 +1,2 @@
+# TestBrowser 
+在Android上，微信的公众号网页是由webview显示的，就用webview控件写了这个小程序，适合本地Tomcat调试移动端网页
