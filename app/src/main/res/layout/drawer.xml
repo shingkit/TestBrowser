@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/bg_drawer"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ip port"
+                android:text="http://192.168.188.251:8080" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="项目目录 "
+                android:text="/WeiXin/egt/Jsp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="网页"
+                android:text="/register.jsp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="保存并跳转" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
